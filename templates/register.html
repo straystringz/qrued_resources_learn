@@ -3,25 +3,28 @@
 
 <head>
     <title>Qrued Resources - Register</title>
-    <link rel="stylesheet" type="text/css" href="reg.css">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/images/logo.png') }}">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'reg.css') }}">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="landing.html">Home</a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="registration-form">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        </div>
         <h2>Register</h2>
         <form>
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-            </div>
+
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
@@ -39,7 +42,7 @@
             </div>
             <button type="submit" class="btn">Register</button>
         </form>
-        <p>Already have an account? <a href="login.html">Log in here</a></p>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Log in here</a></p>
     </section>
 
     <footer>

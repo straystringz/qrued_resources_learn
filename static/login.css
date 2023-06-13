@@ -49,6 +49,7 @@ nav ul li a {
 .login-form h2 {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 5px;
     color: #333;
 }
 
@@ -101,4 +102,19 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.logo-container img {
+    height: 100px;
+    /* Adjust the height as needed */
+    border-radius: 10%;
+    /* Make the corners round */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
 }

@@ -3,11 +3,13 @@
 
 <head>
     <title>Qrued Resources - Learn Tech for Free</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/images/logo.png') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
 </head>
 
 <body>
     <header>
+
         <nav>
             <ul>
                 <li><a href="#intro">Home</a></li>
@@ -19,26 +21,29 @@
 
     <section id="intro" class="hero">
         <div class="hero-content">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            </div>
             <h1>Qrued Resources</h1>
             <h2>Educate, Innovate, Elevate</h2>
             <p>Join our platform and explore a wide range of tech-related lectures.</p>
-            <a href="register.html" class="btn">Get Started</a>
+            <a href="{{url_for('register')}}" class="btn">Get Started</a>
         </div>
     </section>
 
     <section id="features" class="features">
         <div class="feature">
-            <img src="learn.png" alt="Learn Image">
+            <img src="{{ url_for('static', filename = '/images/learn.png')}}" alt="Learn Image">
             <h3>Learn</h3>
             <p>Access a vast library of tech lectures covering various topics.</p>
         </div>
         <div class="feature">
-            <img src="create.png" alt="Create Image">
+            <img src="{{ url_for('static', filename = '/images/create.png')}}" alt="Create Image">
             <h3>Create</h3>
             <p>Share your knowledge and create your own tech lectures.</p>
         </div>
         <div class="feature">
-            <img src="collaborate.png" alt="Collaborate Image">
+            <img src="{{ url_for('static', filename = '/images/collaborate.png')}}" alt="Collaborate Image">
             <h3>Collaborate</h3>
             <p>Connect with like-minded individuals and collaborate on learning.</p>
         </div>
@@ -69,8 +74,6 @@
     <footer>
         <p>&copy; 2023 Qrued Resources. All rights reserved.</p>
     </footer>
-
-
 </body>
 
 </html>

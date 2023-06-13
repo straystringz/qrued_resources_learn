@@ -44,6 +44,7 @@ nav ul li a {
     font-size: 24px;
     color: #777;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .hero-content p {
@@ -112,4 +113,16 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-container img {
+    height: 100px;
+    border-radius: 10%;
+    /* Adjust the height as needed */
 }
