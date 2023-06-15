@@ -80,10 +80,12 @@ nav ul li a {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    background-image: linear-gradient(to bottom, #007bff, #0056b3);
 }
 
 .login-form button:hover {
     background-color: #0056b3;
+    background-image: none;
 }
 
 .login-form p {
@@ -112,9 +114,6 @@ footer {
 
 .logo-container img {
     height: 100px;
-    /* Adjust the height as needed */
     border-radius: 10%;
-    /* Make the corners round */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    /* Add a shadow effect */
 }
