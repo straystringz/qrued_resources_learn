@@ -1,5 +1,3 @@
-I apologize for the confusion in my previous response. Here's an updated version:
-
 1. Project name and tagline:
 Project Name: "Qrued Resources"
 Tagline: "Educate, Innovate, Elevate"
