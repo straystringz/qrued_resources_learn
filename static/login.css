@@ -117,3 +117,29 @@ footer {
     border-radius: 10%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Flash Messages */
+.flash-messages {
+    margin-bottom: 20px;
+}
+
+.flash-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.error {
+    background-color: #ff5c5c;
+    color: #fff;
+}
+
+.success {
+    background-color: #73c373;
+    color: #fff;
+}
+
+.sub_btn button:hover {
+    /* Existing styles */
+    cursor: pointer;
+}

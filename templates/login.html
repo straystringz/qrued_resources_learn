@@ -21,11 +21,23 @@
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
         </div>
         <h2>Log In</h2>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+            <li class="flash-message">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             {{ form.username }}
             {{ form.password }}
-            {{ form.submit }}
+            <div class="sub_btn">{{ form.submit }}</div>
+
         </form>
         <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
     </section>
