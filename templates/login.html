@@ -34,11 +34,18 @@
 
         <form method="POST" action="">
             {{ form.hidden_tag() }}
-            {{ form.username }}
-            {{ form.password }}
-            <div class="sub_btn">{{ form.submit }}</div>
 
+            <!-- Username field -->
+            {{ form.username }}
+
+            <!-- Password field -->
+            {{ form.password }}
+
+            <!-- Submit button -->
+            <div class="sub_btn">{{ form.submit }}</div>
         </form>
+
+        <!--Link to the Register page-->
         <p>Don't have an account? <a href="{{ url_for('register') }}">Register here</a></p>
     </section>
 
